@@ -1,6 +1,6 @@
 {% set name = "contact_map" %}
-{% set version = "0.2.0" %}
-{% set md5 = "596469eafa9a4da940a63e0a7cb67bfc" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "0abf54254ff68285a57f718c654a09f54664de0f640b49213ecb479ecf5a56cf" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: {{ md5 }}
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
