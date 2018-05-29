@@ -1,6 +1,6 @@
 {% set name = "contact_map" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "0abf54254ff68285a57f718c654a09f54664de0f640b49213ecb479ecf5a56cf" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "7590064a6671fdea5267334adf1d65d45dd56121c5fcc53f6fe6f085ba22b4b8" %}
 
 package:
   name: {{ name|lower }}
@@ -14,12 +14,14 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
     - setuptools
+    - pip
+
   run:
     - python
     - future
