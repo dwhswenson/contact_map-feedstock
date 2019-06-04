@@ -1,6 +1,6 @@
 {% set name = "contact_map" %}
-{% set version = "0.3.3" %}
-{% set sha256 = "7d05a777b7c3a9ef76a7f6f2e9324cbc295d004a86b70705407f84cb88866520" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "775a7a5c1dbcbb19adefeaec2c3d11ff6274ce3329ed3b42bd42fda453ab542e" %}
 
 package:
   name: {{ name|lower }}
